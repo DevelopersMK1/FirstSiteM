@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main{
+  overflow: hidden;
+
+}
+
+.header {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2326;
+}
+
+.header_img {
+  padding: 15px 40px;
+}
+
+.logo_riot {
+  padding-right: 30px;
+}
+
+.logo_light {
+  padding-left: 30px;
+  padding-right: 40px;
+  border-left: 1px solid #ffffff;
+}
+
+.header_link {
+  display: flex;
+  margin-right: auto;
+  gap: 40px;
+}
+.heder_link_a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+
+  position: relative;
+}
+
+.heder_link_a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+
+.heder_link_a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.heder_link_a:hover {
+  color: #f80000cb;
+}
+
+.heder_info3 {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.heder_img3 {
+  padding-right: 20px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.agent {
+  font-weight: 500;
+  padding-top: 30px;
+  font-family: "Druk Wide", serif;
+  background-image: url("images/bg2.jpg");
+  background-size: cover;
+  gap: 40px;
+}
+
+.charates {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+}
+
+.charates_logo {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 30px;
+  border-bottom: 10px solid #27292c8f;
+}
+.logo_svg {
+  padding-bottom: 40px;
+}
+
+.AGENTS {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 80px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  writing-mode: tb-rl;
+  margin: 0;
+  margin-bottom: 50px;
+
+  overflow: hidden;
+}
+
+.AGENTS::before{
+  content: "";
+  width: 1px;
+  height: 70% ;
+  border-right: 10px double #fffefe9d;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  animation: moveBorder 2s infinite linear;
+}
+
+@keyframes moveBorder {
+  0%, 20%{
+    bottom: -110%;
+  }
+
+  100%{
+    bottom: 110%;
+  }
+
+  
+}
+
+.charetes1 {
+  position: relative;
+  border-radius: 7px;
+  background-color: #1f2326;
+
+  width: 240px;
+  height: 570px;
+
+  cursor: pointer;
+  transition: 1s 0.1s;
+  
+}
+
+.charetes1:hover{
+  background-color: #fff;
+  transition: 0.5s 0.3s;
+  transform: scale(1.05);
+}
+
+.charetes1:hover .chates_img{
+  transition: 1s 0.1s;
+  border-radius: 7px;
+  transform: translateY(20px);
+  
+}
+
+
+.charetes1:hover .charetes_info {
+  left: -45px;
+  top: +30px;
+  
+}
+
+.charetes1:hover .charetes_info  .chates_name {
+    -webkit-text-stroke: 1px #000000;
+  
+}
+
+.charetes1:hover .charetes_abilities1{
+  transition: 1s 0.1s;
+  right: -27px;
+  border: 1px solid #000000;
+  background-color: #fffefe;
+
+}
+
+.charetes1:hover .charetes_abilities{
+  transition: 1s 0.1s;
+  fill: #000000;
+  
+
+}
+
+
+.sage_bg {
+  position: relative;
+  border-radius: 7px;
+  background-color: #fffefe;
+  
+  width: 240px;
+  height: 570px;
+}
+
+.sage_bg:hover{
+  background-color: #1f2326;
+}
+
+.sage_bg:hover  .sage_img1{
+  border-radius: 7px;
+  transform: translateY(20px);
+  transition: 1s 0.2s;
+  
+}
+
+.sage_bg:hover  .sage_img{
+  transition: 1s 0.1s;
+  right: -27px;
+  border: 1px solid #fdfeff;
+  background-color: #1f2326;
+}
+
+.sage_bg:hover .charetes_abilities_sage{
+  transition: 1s 0.1s;
+  fill: #fdfeff;
+}
+
+.sage_bg:hover  .charetes_info .sage{
+   -webkit-text-stroke: 1px #fffcfc;
+}
+
+
+.chates_img {
+  transition: 1s 0.1s;
+  height: 570px;
+  max-width: 100%;
+}
+
+
+.img_jett{
+  width: 700px;
+}
+
+
+.charetes_info {
+  position: absolute;
+  top: +20px;
+  left: -5px;
+  writing-mode: tb-rl;
+  
+  transition: 1s 0.1s;
+}
+
+
+
+
+.charetes_contre {
+  margin: 0;
+  font-size: 17px;
+  color: #c21111;
+}
+
+.chates_name {
+  margin: 0;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.sage {
+  margin: 0;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.charetes_abilities1 {
+  display: flex;
+  position: absolute;
+  padding: 3px;
+  padding-left: 2px;
+  width: 100%;
+  height: 70px;
+  bottom: -20px;
+  right: -20px;
+  border: 2px solid #ffffff;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1f2326;
+
+  transition: 1s 0.1s;
+}
+
+.charetes_abilities_sage{
+   align-items: center;
+  height: 55px;
+  width: 40px;
+  fill: #080808;
+}
+
+
+
+
+.sage_img {
+ display: flex;
+  position: absolute;
+  padding: 1px;
+  padding-left: 2px;
+  width: 100%;
+  height: 70px;
+  bottom: -20px;
+  right: -20px;
+  border: 2px solid #000000;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fdfeff;
+}
+
+.sage_img1{
+  transition: 1s 0.1s;
+  height: 570px;
+  max-width: 100%;
+
+}
+
+.charetes_abilities {
+  align-items: center;
+  height: 50px;
+  width: 36px;
+  fill: #fff;
+}
+
+.spells_info {
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-left: 70px;
+  width: 380px;
+  height: 153px;
+
+  cursor: pointer;
+  transition: 1s 0.1s;
+}
+
+.bacic_spell {
+  position: relative;
+  gap: 100px;
+  display: flex;
+  padding: 10px 10px;
+  align-items: center;
+  width: 380px;
+  gap: 20px;
+  z-index: 1;
+}
+
+.bacic_spell::after {
+  position: absolute;
+  content: "";
+  background-color: #fd0202c2;
+  width: 100px;
+  height: 60%;
+  bottom: 0;
+  right: 15%;
+  z-index: 1;
+}
+
+.basic_text {
+  padding-bottom: 5px;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgba(71, 74, 75, 0.884);
+}
+
+.slow_text {
+  padding: 6px 0px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+.info_spell_text {
+  position: relative;
+  color: rgb(75, 75, 72);
+  font-size: 12px;
+  margin: 0;
+  z-index: 6;
+}
+
+.abiliti_img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  z-index: 5;
+}
+
+.spells_info:hover {
+  transition: 1s 0.1s;
+  transform: scale(1.04);
+  box-shadow: 10px 10px 10px 8px #1a1919cb;
+  
+}
+
+@media (max-width: 1820px){
+  .spells_info_div{
+    text-align: center;
+   
+  }
+}
+
+
+@media (max-width: 1400px){
+  .spells_info_div{
+    text-align: center;
+   
+  }
+}
+
+@media (max-width: 1350px){
+  .spells_info_div{
+    
+   
+  }
+}
+
