@@ -19,11 +19,18 @@ body {
 
 .header {
   font-size: 15px;
+  height: 74px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #1f2326;
 }
+
+.nav_bar{
+  display: none;
+  width: 60%;
+}
+
 
 .header_img {
   padding: 15px 40px;
@@ -422,22 +429,250 @@ body {
 @media (max-width: 1820px){
   .spells_info_div{
     text-align: center;
-   
   }
+  .spells_info{
+    margin-left: 50px;
+  }
+  .header{
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1740px){
+  .spells_info_div{
+    text-align: center;
+  }
+  .spells_info{
+    margin-left: 30px;
+
+  }
+}
+
+@media (max-width: 1680px){
+  .spells_info_div{
+    text-align: center;
+  }
+  .spells_info{
+    margin-left: 20px;
+     width: 370px;
+    height: 147px;
+    
+}
+}
+
+
+@media (max-width: 1510px){
+  .header_img {
+    padding: 10px 25px;
+}
+.header_link{
+  gap:30px;
+}
 }
 
 
 @media (max-width: 1400px){
   .spells_info_div{
-    text-align: center;
-   
+    text-align: center; 
+  }
+  .header_link{
+    
+    
   }
 }
 
+
+
+
+
 @media (max-width: 1350px){
-  .spells_info_div{
+    .header_img {
+    padding: 10px 15px;
+}
+.header_link{
+  gap:20px;
+}
+
+
+
+
+}
+
+@media (max-width: 1240px){
+    .header_img {
+    padding: 10px 10px;
+}
+.header_link{
+  gap:18px;
+}
+
+
+}
+
+
+@media (max-width: 1220px){
+  .header_link{
+    display: none;
+  }
+
     
-   
+
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+     
+  }
+  
+.nav_bar_button {
+  font-size:26px;
+  padding-inline: 2px;
+  padding-bottom: 2px;
+  color: #fdfeff;
+  background-color: #1f2326;
+  border: none;
+}
+  .heder_info3 {
+        padding-right: 0px;
+  }
+
+}
+
+@media (max-width: 1170px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+  
+  }
+   .heder_info3 {
+        padding-right: 0px;
   }
 }
+
+@media (max-width: 1050px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+    .logo_riot{
+    padding-right: 20px;
+  }
+  .logo_light{
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+     .heder_info3 {
+        padding-right: 0px;
+  }
+}
+
+@media (max-width: 850px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+    width: 40%;
+  }
+    .logo_riot{
+    padding-right: 20px;
+  }
+  .logo_light{
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .heder_info3 {
+        padding-right: 0px;
+  }
+}
+
+@media (max-width: 710px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+    width: 30%;
+  }
+  .heder_info3 {
+        padding-right:  0px;
+  }
+}
+
+@media (max-width: 610px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+    width: 20%;
+  }
+
+  .header_img{
+    padding: 10px 0px;
+  }
+
+  .logo_riot{
+    padding-right: 20px;
+  }
+  .logo_light{
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .heder_info3 {
+        padding-right:  0px;
+  }
+}
+
+@media (max-width: 530px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+    width: 20%;
+    margin-left: 10px;
+  }
+
+  .header_img{
+    padding: 10px 0px;
+  }
+
+  .logo_riot{
+    padding-right: 20px;
+  }
+  .logo_light{
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .heder_info3 {
+        padding-right:  0px;
+  }
+}
+
+@media (max-width: 440px){
+  .nav_bar{
+    display:  flex;
+    justify-content: flex-start;
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .header_img{
+    padding: 10px 0px;
+  }
+
+  .logo_riot{
+    padding-right: 20px;
+  }
+  .logo_light{
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .heder_info3 {
+        padding-right:  0px;
+  }
+  .header_img img{
+   
+
+}
+
+
+
+
+
+
+
 
