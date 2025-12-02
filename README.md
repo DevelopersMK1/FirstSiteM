@@ -1,1 +1,1 @@
-Fiq1rstSiteM.github.io
+https://developersmk1.github.io/FirstSiteM/
