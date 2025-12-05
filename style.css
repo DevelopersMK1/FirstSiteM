@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
-  overflow: hidden;
+ 
 }
 
 * {
@@ -13,7 +13,7 @@ body {
 
 .main {
   overflow: hidden;
-  width: 100%;
+  
 }
 
 .header {
@@ -98,7 +98,7 @@ body {
   background-size: cover;
   gap: 40px;
   
-  width: 100%;
+  /* width: 100%; */
 }
 
 .charates {
@@ -113,8 +113,8 @@ body {
 
   flex-wrap: wrap;
 
-  /* flex: 1 1 calc(20% - 20px); */
-  width: 100%;
+  
+  /* width: 100%; */
 }
 
 .charates_logo {
@@ -425,34 +425,32 @@ body {
     text-align: center;
   }
   .spells_info {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
   }
+  
   .header {
     justify-content: space-evenly;
-    width: 100%;
-  }
-  .agent{
-    width: 100%;
+  
   }
 }
 
 @media (max-width: 1740px) {
-  .spells_info_div {
-    text-align: center;
-  }
+ 
   .spells_info {
     margin-left: 30px;
   }
 }
 
 @media (max-width: 1680px) {
-  .spells_info_div {
-    text-align: center;
-  }
+ 
   .spells_info {
     margin-left: 20px;
     width: 370px;
     height: 147px;
+  }
+  .bacic_spell::after{
+    margin-bottom: 7px;
   }
 }
 
@@ -653,6 +651,10 @@ body {
   .charates_logo{
     margin-right: 10px;
   }
+  .sage_img1{
+    height: 550px;
+
+  }
 }
 
 @media (max-width: 550px) {
@@ -680,41 +682,65 @@ body {
   .charates_logo{
     margin-right: 0px;
   }
-  .media_adaptiv_1{
-    margin-left: 40px;
-  }
-  .charetes1 {
-    width: 200px;
-    height: 530px;
-  } 
-  .chates_img {
-    height: 530px;
-  } 
-}
-@media (max-width: 550px) {
-   .media_adaptiv_1{
+ .media_adaptiv_1{
     margin-left: 20px;
   }
-   .charetes1 {
+  .charetes1 {
     width: 180px;
-    height: 510px;
+    height: 480px;
+  }  
+   .chates_img {
+    height: 450px;
   } 
-  .chates_img {
-    height: 510px;
-  } 
+  .charetes_abilities1 {
+    height: 60px;
+  }
+  .charetes_abilities{
+    height: 40px;
+    width: 33px;
+  }
+  .sage_img1{
+    height: 470px;
+  }
+  .bacic_spell {
+        width: 360px;
+        height: 147px;
+        padding-right: 0px;
 }
-
+    .bacic_spell::after {
+        margin-bottom: 0px;
+    }
+    .basic_text{
+      font-size: 21px;
+      padding-top: 8px;
+    }
+    .slow_text{
+      font-size: 16px;
+    }
+    .abiliti_img{
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+      
+}
 @media (max-width: 470px) {
    .media_adaptiv_1{
     margin-left: 20px;
   }
    .charetes1 {
     width: 170px;
-    height: 500px;
+    height: 470px;
   } 
   .chates_img {
-    height: 500px;
+    height: 450px;
   } 
+  .charetes_abilities1 {
+    height: 60px;
+  }
+  .charetes_abilities{
+    height: 40px;
+    width: 33px;
+  }
 }
 
 
@@ -754,23 +780,65 @@ body {
   }
    .charetes1 {
     width: 160px;
-    height: 490px;
+    height: 470px;
   } 
   .chates_img {
-    height: 490px;
+    height: 450px;
   } 
+  .charetes_abilities1 {
+    height: 60px;
+  }
+  .sage_img{
+    height: 60px;
+
+  }
+  .charetes_abilities{
+    height: 40px;
+    width: 31px;
+  }
+  .charetes_abilities_sage{
+    height: 40px;
+    width: 31px;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   
    .charetes1 {
     width: 145px;
     height: 475px;
   } 
+  .AGENTS{
+    font-size: 70px;
+  }
+  .charetes_contre {
+    font-size: 15px;
+  }
+  .chates_name{
+    font-size: 30px;
+  }
+   .charetes1 {
+    width: 160px;
+    height: 455px;
+  }
   .chates_img {
-    height: 475px;
+    height: 435px;
   } 
-
+ 
+  .charetes_abilities1 {
+    height: 60px;
+  }
+  .charetes_abilities{
+    height: 40px;
+    width: 31px;
+  }
+  .media_adaptiv_2 {
+        margin-left: 35px;
+        margin-right: 25px;
+}
+.sage_img1{
+   height: 435px;
+}
 }
 
 @media (max-width: 400px) {
@@ -780,8 +848,11 @@ body {
     height: 405px;
   } 
   .chates_img {
-    height: 405px;
+    height: 385px;
   } 
+  .sage_img1{
+   height: 385px;
+}
   .AGENTS{
     font-size: 70px;
   }
@@ -789,7 +860,24 @@ body {
     width: 70px;
     padding-bottom: 20px;
   }
+   .charetes_abilities1 {
+    height: 55px;
+  }
+  .charetes_abilities{
+    height: 40px;
+    width: 31px;
+  }
+    .spells_info{
+      margin-left: 10px;
+      width: 350px;
+        height: 147px;
+  }
 
+      .bacic_spell {
+        width: 340px;
+        height: 147px;
+        padding-right: 0px;
+}
 }
 
 @media (max-width: 380px) {
@@ -825,4 +913,54 @@ body {
     width: 30px;
     border-radius: 70%;
   }
+
+     .charetes1 {
+    width: 135px;
+    height: 405px;
+  } 
+  .chates_img {
+    height: 385px;
+  } 
+
+   .sage_img1{
+    height: 385px;
+
+   }
+  .AGENTS{
+    font-size: 70px;
+  }
+  .logo_svg{
+    width: 70px;
+    padding-bottom: 20px;
+  }
+
+   .charetes_abilities1 {
+    right: -10px;
+    height: 55px;
+  }
+   .sage_img{
+    right: -10px;
+    height: 55px;
+   }
+  .charetes_abilities{
+    height: 40px;
+    width: 26px;
+  }
+   .charetes_abilities_sage{
+    height: 40px;
+    width: 26px;
+  }
+  .charetes1:hover .charetes_abilities1 {
+    right: -15px;
+  }
+  .spells_info{
+      margin-left: 10px;
+      width: 335px;
+       height: 147px;
+  }
+      .bacic_spell {
+        width: 330px;
+        height: 147px;
+        padding-right: 0px;
+}
 }
