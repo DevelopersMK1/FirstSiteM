@@ -30,6 +30,14 @@ body {
   width: 60%;
 }
 
+
+.nav-list a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+
+}
+
 .header_img {
   padding: 15px 40px;
 }
@@ -414,11 +422,29 @@ body {
   z-index: 5;
 }
 
+.spells_info_div{
+  display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
 .spells_info:hover {
   transition: 1s 0.1s;
   transform: scale(1.04);
   box-shadow: 10px 10px 10px 8px #1a1919cb;
 }
+
+.drop:hover .nav-list{
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 2590px) {
+  .spells_info{
+    /* margin-left: 220px; */
+  }
+}
+
 
 @media (max-width: 1820px) {
   .spells_info_div {
@@ -501,6 +527,7 @@ body {
   .header_link {
     gap: 18px;
   }
+
 }
 
 @media (max-width: 1220px) {
@@ -520,9 +547,25 @@ body {
     color: #fdfeff;
     background-color: #1f2326;
     border: none;
+
+    cursor: pointer;
   }
   .heder_info3 {
     padding-right: 0px;
+  }
+    .heder_link_a {
+    color: #fdfdfd;
+    line-height: 30px;
+    padding: 5px;
+    z-index: 100; 
+  }
+     .drop:hover .header_link{
+    display: block;
+    position: absolute;
+  }
+
+  .heder_link_a:hover {
+    color: #bbbbd1b9;
   }
 }
 
